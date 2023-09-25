@@ -1,18 +1,24 @@
+# Files
 .env
 .DS_Store
 .idea
-.cache
+
+# Folders
+/.cache
+/.vscode
+/build
+/coverage
+/dist
+/node_modules
+/tsconfig.tsbuildinfo
+/uploads
 
 !src/**
 
-/dist
-/uploads
-/node_modules
-/tsconfig.tsbuildinfo
-/build
-
-coverage
-
+# Lock Files
 package-lock.json
 pnpm-lock.yaml
+yarn.lock
+
+# Database
 medusa-db.sql
