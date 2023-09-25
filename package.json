@@ -1,8 +1,8 @@
 {
-  "name": "medusa-starter-default",
+  "name": "Whiskers World Store Medusa Backend",
   "version": "0.0.1",
-  "description": "A starter for Medusa projects.",
-  "author": "Sebastian Rindom <skrindom@gmail.com>",
+  "description": "Backend Medusa Store for Whiskers World Store",
+  "author": "Aleksei Stukalov <aleksei@blackdotdigital.co.nz>",
   "license": "MIT",
   "keywords": [
     "sqlite",
