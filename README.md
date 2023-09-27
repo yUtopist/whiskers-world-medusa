@@ -8,13 +8,8 @@
   </a>
 </p>
 
-<h1 align="center">
-  Ecommerce Backend<br>powered by Medusa
-</h1>
-
-<h4 align="center">
-  <a href="https://docs.medusajs.com">Medusa Documentation</a> |
-</h4>
+<h1 align="center">powered by Medusa</h1>
+<h4 align="center"><a href="https://docs.medusajs.com">Medusa Documentation</a></h4>
 
 
 ## Compatibility
