@@ -3,7 +3,7 @@ const { GracefulShutdownServer } = require("medusa-core-utils")
 
 const loaders = require("@medusajs/medusa/dist/loaders/index").default
 
-;(async() => {
+(async () => {
   async function start() {
     const app = express()
     const directory = process.cwd()
@@ -13,9 +13,9 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
         directory,
         expressApp: app
       })
-      const configModule = container.resolve("configModule")
-      const port = process.env.PORT ?? configModule.projectConfig.port ?? 9000
 
+      const configModule = container.resolve("configModule")
+      const port = process.env.BACKEND_PORT ?? configModule.projectConfig.port ?? 9000
       const server = GracefulShutdownServer.create(
         app.listen(port, (err) => {
           if (err) {
@@ -38,6 +38,7 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
             process.exit(1)
           })
       }
+
       process.on("SIGTERM", gracefulShutDown)
       process.on("SIGINT", gracefulShutDown)
     } catch (err) {
@@ -45,6 +46,6 @@ const loaders = require("@medusajs/medusa/dist/loaders/index").default
       process.exit(1)
     }
   }
-
+  
   await start()
 })()

@@ -23,9 +23,8 @@ try {
 
 // CORS when consuming Medusa from admin
 const ADMIN_CORS = process.env.ADMIN_CORS;
-
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
+const STORE_CORS = process.env.STORE_CORS;
 
 // Setting up the database url
 const DATABASE_USER = process.env.DATABASE_USER

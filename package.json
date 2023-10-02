@@ -1,8 +1,8 @@
 {
-  "name": "medusa-starter-default",
-  "version": "0.0.1",
-  "description": "A starter for Medusa projects.",
-  "author": "Sebastian Rindom <skrindom@gmail.com>",
+  "name": "whiskers-world-medusa",
+  "version": "0.1",
+  "description": "Where whiskers find new home.",
+  "author": "Aleksei Stukalov <aleksei@blackdotdigital.co.nz>",
   "license": "MIT",
   "keywords": [
     "sqlite",
