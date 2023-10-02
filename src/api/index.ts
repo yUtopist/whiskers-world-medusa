@@ -8,11 +8,8 @@ import { attachAdminRoutes } from "./routes/admin";
 
 export default (rootDirectory: string): Router | Router[] => {
   // Read currently-loaded medusa config
-  const { configModule } = getConfigFile<ConfigModule>(
-    rootDirectory,
-    "medusa-config"
-  );
-  const { projectConfig } = configModule;
+  const { configModule } = getConfigFile<ConfigModule>(rootDirectory, "medusa-config")
+  const { projectConfig } = configModule
 
   // Set up our CORS options objects, based on config
   const storeCorsOptions = {
